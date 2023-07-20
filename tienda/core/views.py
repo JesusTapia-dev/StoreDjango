@@ -17,3 +17,8 @@ def contact(request):
     return render(request,'core/contact.html'
                   ,{'items':items
                     })
+def product(request):
+    items=Item.objects.filter(is_sold=False)
+    return render(request,'core/product.html'
+                  ,{'items':items
+                    })
