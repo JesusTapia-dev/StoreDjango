@@ -1,2 +1,2 @@
-# StoreDjango
+# Store Web Page | DJANGO
  
