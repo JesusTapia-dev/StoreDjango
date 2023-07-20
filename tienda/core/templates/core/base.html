@@ -1,11 +1,32 @@
 <!DOCTYPE html> 
 <html> 
+    <style>
+
+        .float{
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            background-color:#25d366;
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+          font-size:30px;
+            box-shadow: 2px 2px 3px #999;
+          z-index:100;
+        }
+        
+        .my-float{
+            margin-top:16px;
+        }
+        </style>
     <head> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <script src="https://cdn.tailwindcss.com"></script>
-        <title> {% block title %}{% endblock %} | Tienda Virtual</title>
+        <title> {% block title %}{% endblock %} | HealthChoose</title>
         </head> 
         <body>
             <nav class="py-6 px-6 flex justify-between items-center border-b border-gray-200">
@@ -41,5 +62,9 @@
                     </ul>
                 </div>
             </footer>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+            <a href="https://api.whatsapp.com/send?phone=51976485545&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20." class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+            </a>
         </body>
 <html> 
