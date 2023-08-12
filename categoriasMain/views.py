@@ -3,8 +3,10 @@ from item.models import Item,Category
 
 def categoriasDetail(request,pk):
     item=get_object_or_404(Item,pk=pk)
-    categories = Category.objects.all()
+    categorias = Category.objects.all()
+    specificItems=Item.objects.filter(category=item.category,is_sold=False)
     return render(request, 'categorias/categoriasDetail.html',{
         'item':item,
-        'categories':categories,
+        'categorias':categorias,
+        'specificItems':specificItems,
     })
