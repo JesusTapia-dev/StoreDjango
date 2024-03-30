@@ -21,10 +21,15 @@ from django.urls import path, include
 from storedjango import settings
 from tienda.views import index, contact, product
 
+'''
+path: el contact/ es la url en el navegador, mientras
+que se usa el name='contacto' se refiere al modo en el que se
+llamara a ella en el archivo html
+'''
 urlpatterns = [
                   path('', index, name='index'),
                   path('items/', include('item.urls')),
-                  path('contact/', contact, name='contact'),
+                  path('contact/', contact, name='contacto'),
                   path('product/', product, name='product'),
                   path('admin/', admin.site.urls),
                   path('categorias/',include('categoriasMain.urls')),
