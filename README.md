@@ -1,6 +1,7 @@
 # Store Web Page | DJANGO
- 
-Para iniciar primero
+ Si se descarga desde Github, para crear el entorno virtual se usa:
+ python -m venv .venv
+Para iniciar la primera vez se usa: source env/bin/active
 se tiene que activar el virtual environment: .venv\scripts\activate
 
 
